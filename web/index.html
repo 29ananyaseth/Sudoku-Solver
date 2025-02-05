@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sudoku Solver</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Sudoku Solver</h1>
+
+    <!-- Sudoku Grid -->
+    <table id="sudoku-grid">
+      <tbody>
+        <!-- 9 rows of 9 cells -->
+        <script>
+          for (let i = 0; i < 9; i++) {
+            document.write("<tr>");
+            for (let j = 0; j < 9; j++) {
+              document.write(`<td>
+                <input type="number" min="1" max="9" class="cell">
+              </td>`);
+            }
+            document.write("</tr>");
+          }
+        </script>
+      </tbody>
+    </table>
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button id="solve-btn">Solve</button>
+      <button id="reset-btn">Reset</button>
+      <button id="validate-btn">Validate</button>
+    </div>
+  </div>
+
+  <script src="scripts.js"></script>
+</body>
+
+</html>
