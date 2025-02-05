@@ -14,5 +14,4 @@ A Python-based Sudoku solver with a web interface.
 3. Run the web server: `python app.py` (if Flask backend is added).
 4. Access the UI at `http://localhost:5000`.
 
-## Tests
-Run tests with:
+
